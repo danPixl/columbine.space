@@ -1,4 +1,4 @@
 title: 10k
-baseurl: "/columbine.space" # the subpath of your site, e.g. /blog/
+baseurl: "/columbine.space/" # the subpath of your site, e.g. /blog/
 url: "https://columbinespace.github.io" # the base hostname & protocol for your site
 exclude: [dummy]
