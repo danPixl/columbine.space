@@ -9,6 +9,12 @@
     },
     "color": {
       "value": "#aaaadd"
+    },
+    "shape": {
+      "type": "star",
+      "stroke": {
+        "width": 0,
+        "color": "#aaaadd"
       },
       "polygon": {
         "nb_sides": 5
