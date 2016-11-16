@@ -75,7 +75,7 @@
         "mode": "repulse"
       },
       "onclick": {
-        "enable": false,
+        "enable": true,
         "mode": "push"
       },
       "resize": true
@@ -95,7 +95,7 @@
         "speed": 1
       },
       "repulse": {
-        "distance": 320,
+        "distance": 192,
         "duration": 0.4
       },
       "push": {
