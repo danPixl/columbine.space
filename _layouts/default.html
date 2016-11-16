@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<!--[if IE 8]>    <html class="no-js ie8" lang="en"> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html class="no-js {% if page.bg %}bg{% endif %}" lang="en">
+<!--<![endif]-->
+<head>
+
+   <meta charset="utf-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <title>LEAWOOD.CLOUD - The Leawood/Columbine organization</title>
+   <meta name="description" content="Dedicated to JavaScript and its awesome community since 2015. Get a custom domain for free, check out what is trending or just spread your news">
+   <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="Refresh" content="5; url=http://127.0.0.1:4000" />
+   <!-- page generated {{ site.time | date_to_rfc822 }} -->
+   {% include icon.html %}
+   {% include ie8.html %}
+   {% include style.html %}
+   <script>var doc = document.documentElement; doc.className = doc.className.replace("no-js", "");</script>
+
+</head>
+<body>
+    <script src="particles.js"></script>
+    <div id="particles-js"></div>
+   {% include header.html %}
+   {{ content }}
+   {% include footer.html %}
+   <link href="css/js.css" rel="stylesheet" property="stylesheet">
+   <script>
+      {% if page.ghstars %}{% include ghstars.html %}{% endif %}
+      var _paq = _paq || [];_paq.push(["setDocumentTitle", document.domain + "/" + document.title]);_paq.push(["setCookieDomain", "*.js.org"]);_paq.push(['trackPageView']);_paq.push(['enableLinkTracking']);(function() {var u="//piwik.js.org/";_paq.push(['setTrackerUrl', u+'piwik.php']);_paq.push(['setSiteId', 2]);var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];g.type='text/javascript'; g.async=true; g.defer=true; g.src=u+'piwik.js'; s.parentNode.insertBefore(g,s);})();
+   </script>
+    <script>
+        /* particlesJS.load(@dom-id, @path-json, @callback (optional)); */
+        particlesJS.load('particles-js', 'assets/particles.json', function() {
+            console.log('callback - particles.js config loaded');
+            console.log('callback - particles.js config loaded');
+        });
+    </script>
+</body>
+</html>
