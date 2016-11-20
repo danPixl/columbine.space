@@ -8,51 +8,13 @@ zodiac: true
 
    <p><strong>CONTRIBUTIONS ARE WELCOME</strong>: If you have the passion to start a collaborative project, or if you want to be a member of and contribute to JS.ORG, feel free to <a href="https://github.com/js-org" rel="nofollow" target="_blank" title="GitHub user profile"><strong>contact me</strong></a>.</p>
 
-<form class="js-form form" method="post" action="https://api.staticman.net/v1/entry/ColumbineSpace/columbine.space/master">
-  <div class="form__spinner mdl-spinner mdl-spinner--single-color mdl-js-spinner is-active"></div>
-  <fieldset class="field-group">
-    <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
-      <input class="mdl-textfield__input" type="text" id="movie-form[name]" name="fields[name]"/>
-      <label class="mdl-textfield__label" for="movie-form[name]">Your name</label>
-    </div>
-  </fieldset>
+  <section class="constrain">
+    <h3>Write a review</h3>
+    {% include reviews-new.html %}
+  </section>
+  
+  <section class="constrain">
+    <h3>All reviews</h3>
 
-  <fieldset class="field-group">
-    <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
-      <input class="mdl-textfield__input" type="text" id="movie-form[title]" name="fields[title]"/>
-      <label class="mdl-textfield__label" for="movie-form[title]">Title</label>
-    </div>
-  </fieldset>
-
-  <fieldset class="field-group">
-    <div class="mdl-textfield mdl-textfield--floating-label mdl-js-textfield">
-      <textarea class="mdl-textfield__input" name="fields[description]" type="text" rows= "3" id="movie-form[description]"></textarea>
-      <label class="mdl-textfield__label" for="movie-form[description]">The news or event.</label>
-    </div>
-  </fieldset>
-  <fieldset class="field-group">
-    <button class="mdl-button mdl-js-button mdl-button--raised mdl-button--colored">
-      Submit
-    </button>
-  </fieldset>
-</form>
-
-<div class="js-comments">
-	{% assign reviews = site.data.reviews | sort %}
-	
-	{% for review in reviews reversed %}
-		{% assign reviewData = review[1] %}
-
-		<article class="review mdl-card mdl-shadow--2dp">
-		  <div class="mdl-card__title">
-		    <h2 class="mdl-card__title-text">{{ reviewData.title }}</h2>
-		  </div>
-		  <div class="mdl-card__supporting-text">
-		  	<p><strong>Published by </strong>{{ reviewData.name }}</p>
-		    <div class="review__description">
-		    	{{ reviewData.description | markdownify }}
-		    </div>
-		  </div>
-		</article>
-	{% endfor %}
-</div>
+    {% include reviews.html %}
+  </section>
