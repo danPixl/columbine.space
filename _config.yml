@@ -5,11 +5,11 @@ exclude: [dummy]
 
 # Staticman
 staticman:
- allowedFields: ['name', 'title', 'description', 'rating']
+ allowedFields: ['name', 'title', 'description', 'location']
  branch: master
  commitMessage: "Hey human, here is a new entry."
  filename: "entry{@timestamp}"
  format: yml
- moderation: true
+ moderation: false
  path: "_data/reviews"
- requiredFields: ['name', 'title', 'description', 'rating']
+ requiredFields: ['name', 'title', 'description']
