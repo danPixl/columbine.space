@@ -1,13 +1,13 @@
 title: 10k
-baseurl: "/columbine.space/" # the subpath of your site, e.g. /blog/
-url: "https://columbinespace.github.io" # the base hostname & protocol for your site
+baseurl: "/" # the subpath of your site, e.g. /blog/
+url: "http://columbine.space" # the base hostname & protocol for your site
 exclude: [dummy]
 
 # Staticman
 staticman:
  allowedFields: ['name', 'title', 'description', 'location']
  branch: master
- commitMessage: "Hey human, here is a new entry."
+ commitMessage: "New piece of news."
  filename: "entry{@timestamp}"
  format: yml
  moderation: false
