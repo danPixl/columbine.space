@@ -5,11 +5,11 @@ exclude: [dummy]
 
 # Staticman
 staticman:
- allowedFields: ['name', 'news', 'description']
- branch: master
- commitMessage: "New news."
+ allowedFields: ['name', 'title', 'description', 'rating']
+ branch: gh-pages
+ commitMessage: "Hey human, here is a new entry."
  filename: "entry{@timestamp}"
  format: yml
- moderation: false
+ moderation: true
  path: "_data/reviews"
- requiredFields: ['name', 'news', 'description']
+ requiredFields: ['name', 'title', 'description', 'rating']
