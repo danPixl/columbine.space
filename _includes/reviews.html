@@ -3,7 +3,8 @@
 	
 	{% for review in reviews reversed %}
 		{% assign reviewData = review[1] %}
-
+   <ul class="btf panel">
+		 <li>
 		<article class="review mdl-card mdl-shadow--2dp">
 		  <div class="mdl-card__title">
 		    <h2 class="mdl-card__title-text">{{ reviewData.title }}</h2>
@@ -25,5 +26,7 @@
 		    </a>
 		  </div>
 		</article>
+		 </li>
 	{% endfor %}
 </div>
+   </ul>
