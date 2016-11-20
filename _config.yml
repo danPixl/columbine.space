@@ -2,3 +2,14 @@ title: 10k
 baseurl: "/columbine.space/" # the subpath of your site, e.g. /blog/
 url: "https://columbinespace.github.io" # the base hostname & protocol for your site
 exclude: [dummy]
+
+# Staticman
+staticman:
+ allowedFields: ['name', 'news', 'description']
+ branch: master
+ commitMessage: "New news."
+ filename: "entry{@timestamp}"
+ format: yml
+ moderation: false
+ path: "_data/reviews"
+ requiredFields: ['name', 'news', 'description']
