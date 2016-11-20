@@ -5,13 +5,13 @@
 		{% assign reviewData = review[1] %}
    <ul class="btf panel">
 		 <li>
-		<article class="review mdl-card mdl-shadow--2dp">
-		  <div class="mdl-card__title">
-		    <h2 class="mdl-card__title-text">{{ reviewData.title }}</h2>
+		<article>
+		  <div>
+		    <h2>{{ reviewData.title }}</h2>
 		  </div>
-		  <div class="mdl-card__supporting-text">
+		  <div>
 		  	<p>Posted by <strong>{{ reviewData.name }}</strong></p>
-		    <div class="review__description">
+		    <div>
 		    	{{ reviewData.description | markdownify }}
 		    </div>
 		  </div>
