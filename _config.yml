@@ -5,7 +5,7 @@ exclude: [dummy]
 
 # Staticman
 staticman:
- allowedFields: ['name', 'title', 'description', 'location']
+ allowedFields: ['name', 'title', 'description']
  branch: master
  commitMessage: "New piece of news."
  filename: "entry{@timestamp}"
