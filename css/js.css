@@ -81,3 +81,13 @@ fieldset { border:0px;}
 .contributors li a:hover img {
   border: 1px solid #bbb;
 }
+
+html {
+    -webkit-font-variant-ligatures: none;
+  -moz-font-variant-ligatures: none;
+  font-variant-ligatures: none;
+  -webkit-font-feature-settings: 'liga' 0, 'onum' 1, 'kern' 1;
+  -moz-font-feature-settings: 'liga' 0, 'onum' 1, 'kern' 1;
+  -o-font-feature-settings: 'liga' 0, 'onum' 1, 'kern' 1;
+  font-feature-settings: 'liga' 0, 'onum' 1, 'kern' 1;
+}
