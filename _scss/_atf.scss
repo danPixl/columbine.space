@@ -34,6 +34,13 @@
 
 html {
     background-color: $cBgr;
+      -webkit-font-variant-ligatures: none;
+  -moz-font-variant-ligatures: none;
+  font-variant-ligatures: none;
+  -webkit-font-feature-settings: 'liga' 0, 'onum' 1, 'kern' 1;
+  -moz-font-feature-settings: 'liga' 0, 'onum' 1, 'kern' 1;
+  -o-font-feature-settings: 'liga' 0, 'onum' 1, 'kern' 1;
+  font-feature-settings: 'liga' 0, 'onum' 1, 'kern' 1;
 }
 
 body {
@@ -48,6 +55,13 @@ body {
     -ms-text-size-adjust: 100%;
     text-size-adjust: 100%;
     color: $cTxt;
+      -webkit-font-variant-ligatures: none;
+  -moz-font-variant-ligatures: none;
+  font-variant-ligatures: none;
+  -webkit-font-feature-settings: 'liga' 0, 'onum' 1, 'kern' 1;
+  -moz-font-feature-settings: 'liga' 0, 'onum' 1, 'kern' 1;
+  -o-font-feature-settings: 'liga' 0, 'onum' 1, 'kern' 1;
+  font-feature-settings: 'liga' 0, 'onum' 1, 'kern' 1;
 }
 
 .btf {
