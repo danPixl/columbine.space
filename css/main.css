@@ -157,7 +157,7 @@ section + section {
 	z-index: 9999;
 }
 
-.html {
+html {
   -webkit-font-variant-ligatures: none;
   -moz-font-variant-ligatures: none;
   font-variant-ligatures: none;
